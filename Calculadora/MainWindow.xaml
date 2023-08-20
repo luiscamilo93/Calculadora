@@ -1,0 +1,166 @@
+﻿<Window x:Class="Calculadora.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculadora"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="418.249" Width="450">
+    <Grid Background="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}">
+        <Button Content="7" FontSize="25" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Width="75" Height="73" Click="ButtonNumeros">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="3" CornerRadius="3">
+                        <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                        </ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="8" FontSize="25" HorizontalAlignment="Left" Margin="90,68,0,0" VerticalAlignment="Top" Width="75" Height="73" Click="ButtonNumeros">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="3" CornerRadius="3">
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="9" FontSize="25" HorizontalAlignment="Left" Margin="170,68,0,0" VerticalAlignment="Top" Width="75" Height="73" Click="ButtonNumeros">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="3" CornerRadius="3">
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="4" FontSize="25" HorizontalAlignment="Left" Margin="10,146,0,0" VerticalAlignment="Top" Width="75" Height="73" Click="ButtonNumeros">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="3" CornerRadius="3">
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="6" FontSize="25" HorizontalAlignment="Left" Margin="170,146,0,0" VerticalAlignment="Top" Width="75" Height="73" Click="ButtonNumeros">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="3" CornerRadius="3">
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="5" FontSize="25" HorizontalAlignment="Left" Margin="90,146,0,0" VerticalAlignment="Top" Width="75" Height="73" Click="ButtonNumeros">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="3" CornerRadius="3">
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="1" FontSize="25" HorizontalAlignment="Left" Margin="10,224,0,0" VerticalAlignment="Top" Width="75" Height="73" Click="ButtonNumeros" RenderTransformOrigin="0.571,0.309">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="3" CornerRadius="3">
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="3" FontSize="25" HorizontalAlignment="Left" Margin="170,224,0,0" VerticalAlignment="Top" Width="75" Height="73" Click="ButtonNumeros">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="3" CornerRadius="3">
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="2" FontSize="25" HorizontalAlignment="Left" Margin="90,224,0,0" VerticalAlignment="Top" Width="75" Height="73" Click="ButtonNumeros">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="3" CornerRadius="3">
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="0" FontSize="25" HorizontalAlignment="Left" Margin="90,302,0,0" VerticalAlignment="Top" Width="75" Height="73" RenderTransformOrigin="1.381,0.525" Click="ButtonNumeros">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="3" CornerRadius="3">
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBox Name="Pantalla" HorizontalAlignment="Left" Height="52" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="423" />
+        <Button Content="." FontSize="25" HorizontalAlignment="Left" Margin="170,302,0,0" VerticalAlignment="Top" Width="75" Height="73" Click="ButtonPunto">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="3" CornerRadius="3">
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="+" FontSize="25" HorizontalAlignment="Left" Margin="273,68,0,0" VerticalAlignment="Top" Width="75" Height="73" Click="ButtonOperadores">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="3" CornerRadius="3">
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="*" FontSize="25" HorizontalAlignment="Left" Margin="358,68,0,0" VerticalAlignment="Top" Width="75" Height="73" Click="ButtonOperadores">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="3" CornerRadius="3">
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="/" FontSize="25" HorizontalAlignment="Left" Margin="358,146,0,0" VerticalAlignment="Top" Width="75" Height="73" Click="ButtonOperadores">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="3" CornerRadius="3">
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="=" FontSize="25" HorizontalAlignment="Left" Margin="273,224,0,0" VerticalAlignment="Top" Width="75" Height="73" Click="ButtonIgual">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="3" CornerRadius="3">
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="-" FontSize="25" HorizontalAlignment="Left" Margin="273,146,0,0" VerticalAlignment="Top" Width="75" Height="73" Click="ButtonOperadores">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="3" CornerRadius="3">
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="C" FontSize="25" HorizontalAlignment="Left" Margin="10,302,0,0" VerticalAlignment="Top" Width="75" Height="73" Click="Limpiar">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="3" CornerRadius="3">
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Grid>
+</Window>
